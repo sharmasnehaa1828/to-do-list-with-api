@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Todo List</title>
+    <style>
+        .flex-container {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .completed,
+        .notcompleted {
+            padding: 20px;
+            border: 2px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <input type='text' name='todo_input' value="">
+        <button type='submit'>Add Todo</button>
+        <div class='todos'></div>
+    </div>
+
+    <div class="flex-container">
+
+        <div class="completed" class="flex-child magenta">
+            <h1>completed</h1>
+        </div>
+        <div class="notcompleted" class="flex-child green">
+            <h1>Not completed</h1>
+        </div>
+
+    </div>
+</body>
+<script src='./script.js'></script>
+
+</html>
